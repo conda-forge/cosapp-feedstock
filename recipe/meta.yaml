@@ -1,5 +1,5 @@
 {% set name = "cosapp" %}
-{% set version = "0.11.4" %}
+{% set version = "0.11.5" %}
 
 package:
   name: {{ name }}
@@ -7,13 +7,13 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d7d0d8f90eb8cb7be4c4362629620c5d4decefb20a80f731f294b844eb5ab81e
+  sha256: f729c918fff00e55961670497107ad761de7c15d36df9cf3402f5ee7d9344d6e
 
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
   host:
@@ -40,7 +40,7 @@ test:
 
 about:
   home: https://cosapp.readthedocs.io
-  summary: "CoSApp, the Collaborative System Approach."
+  summary: CoSApp, the Collaborative System Approach.
   description: |
     The primary goal of **CoSApp** is to help technical department in the design of complex systems.
     To do so, the framework allows the simulation of various systems representing the different
@@ -71,5 +71,5 @@ about:
 
 extra:
   recipe-maintainers:
+    - elac-safran
     - trungle-safran
- 

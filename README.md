@@ -62,6 +62,7 @@ Installing `cosapp` from the `conda-forge` channel can be achieved by adding `co
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `cosapp` can be installed with:
@@ -140,5 +141,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@elac-safran](https://github.com/elac-safran/)
 * [@trungle-safran](https://github.com/trungle-safran/)
 
