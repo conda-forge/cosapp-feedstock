@@ -1,5 +1,5 @@
 {% set name = "cosapp" %}
-{% set version = "0.11.5" %}
+{% set version = "0.11.6" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f729c918fff00e55961670497107ad761de7c15d36df9cf3402f5ee7d9344d6e
+  sha256: 0d625c0598425f53130b93c8082e305b5e9b0aab44cfc79e9cf487e838218183
 
 
 build:
@@ -72,4 +72,3 @@ about:
 extra:
   recipe-maintainers:
     - elac-safran
-    - trungle-safran
