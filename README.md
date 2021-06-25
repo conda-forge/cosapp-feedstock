@@ -142,5 +142,4 @@ Feedstock Maintainers
 =====================
 
 * [@elac-safran](https://github.com/elac-safran/)
-* [@trungle-safran](https://github.com/trungle-safran/)
 
