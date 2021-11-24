@@ -24,6 +24,7 @@ requirements:
     - jsonschema
     - numpy >=1.12
     - scipy
+    - wrapt
 
 test:
   requires:
