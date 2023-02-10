@@ -16,10 +16,10 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.8
     - pip
   run:
-    - python >=3.6
+    - python >=3.8
     - pandas
     - jsonschema
     - numpy >=1.12
@@ -28,6 +28,7 @@ requirements:
 
 test:
   requires:
+    - python=3.10
     - coverage
     - jinja2
     - pytest
