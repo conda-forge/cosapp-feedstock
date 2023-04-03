@@ -1,5 +1,5 @@
 {% set name = "cosapp" %}
-{% set version = "0.13.0" %}
+{% set version = "0.13.1" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 27b1dec7b6442b6aaa56b9cf317c516c08f5b8c554dacb961f9c7937d1e58d9f
+  sha256: c50736d8bd099e34bd2d102365a770ebe9702411b34bd8b7c3980bbac84c0424
 
 build:
   noarch: python
@@ -65,7 +65,7 @@ about:
 
     All design parameters have an intrinsic dispersion. Knowing the range of fluctuations is crucial to
     ensure the robustness of the design. CoSApp handles natively uncertain variables.
-  keywords: cosapp
+  keywords: cosapp, system simulation, system design
   dev_url: https://gitlab.com/cosapp/cosapp
   license: Apache-2.0
   license_file: LICENSE.rst
