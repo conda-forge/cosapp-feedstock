@@ -1,17 +1,18 @@
 {% set name = "cosapp" %}
-{% set version = "0.13.1" %}
+{% set version = "0.14.0" %}
+{% set pypi_version = "0.14.0-1" %}
 
 package:
   name: {{ name }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c50736d8bd099e34bd2d102365a770ebe9702411b34bd8b7c3980bbac84c0424
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ pypi_version }}.tar.gz
+  sha256: b4a47b97c633e9f3b76ed6f46564983be5a908e01bfaecae7d144e214f28d11a
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:

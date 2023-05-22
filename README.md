@@ -1,11 +1,11 @@
-About cosapp
-============
+About cosapp-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/cosapp-feedstock/blob/main/LICENSE.txt)
 
 Home: https://cosapp.readthedocs.io
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/cosapp-feedstock/blob/main/LICENSE.txt)
 
 Summary: CoSApp, the Collaborative System Approach.
 
