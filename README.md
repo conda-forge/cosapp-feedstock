@@ -11,28 +11,26 @@ Summary: CoSApp, the Collaborative System Approach.
 
 Development: https://gitlab.com/cosapp/cosapp
 
-The primary goal of **CoSApp** is to help technical department in the design of complex systems.
-To do so, the framework allows the simulation of various systems representing the different
-parts of the final product in a common environment. The consequences are the ability for each
-subsystem team to carry out design study with a direct feedback of the impact of parameters at
-the product level.
+The primary goal of **CoSApp** is to help technical departments in the design of complex systems.
+To do so, the framework allows the simulation of various systems representing the different parts
+of the final product in a common environment. The benefit is the ability for each subsystem team
+to carry out design study with a direct feedback at product level.
 
-The main features are :
+The main features are:
 
 - Butterfly effect
 
-Coupled your preferred simulation software with CoSApp to get immediate impact on main product
-variables and iterates to converge on a better design.
+Couple your simulation models with CoSApp to get immediate impact on main product variables
+and iterate to converge on a better design.
 
 - Design guidance
 
 All systems can share design parameters associated with an acceptable range. You can take advantage
-of those limited degrees of freedom without fear of breaking your neighbors' work.
+of those limited degrees of freedom without fear of breaking your collaborators' work.
 
-- Margins & Uncertainties
+- Flexible simulation workflows
 
-All design parameters have an intrinsic dispersion. Knowing the range of fluctuations is crucial to
-ensure the robustness of the design. CoSApp handles natively uncertain variables.
+CoSApp solvers can be combined into versatile, customized workflows that fit specific simulation intents.
 
 
 Current build status
@@ -121,7 +119,7 @@ available continuous integration services. Thanks to the awesome service provide
 [CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/),
 [Drone](https://cloud.drone.io/welcome), and [TravisCI](https://travis-ci.com/)
 it is possible to build and upload installable packages to the
-[conda-forge](https://anaconda.org/conda-forge) [Anaconda-Cloud](https://anaconda.org/)
+[conda-forge](https://anaconda.org/conda-forge) [anaconda.org](https://anaconda.org/)
 channel for Linux, Windows and OSX respectively.
 
 To manage the continuous integration and simplify feedstock maintenance
