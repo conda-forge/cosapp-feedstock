@@ -1,6 +1,6 @@
 {% set name = "cosapp" %}
-{% set version = "0.15.3" %}
-{% set pypi_version = "0.15.3" %}
+{% set version = "0.15.4" %}
+{% set pypi_version = "0.15.4" %}
 
 package:
   name: {{ name }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ pypi_version }}.tar.gz
-  sha256: 2de17aa43256548e67dd6e5317e0826f503dc0562063645fe65e3930e0b3c82a
+  sha256: 7f4afcabf50fb670ffefffcc8fa8a7fa3569267d6c1b519d012ad693c7ec8877
 
 build:
   noarch: python
@@ -23,6 +23,7 @@ requirements:
     - python >=3.8
     - pandas
     - jsonschema
+    - jinja2
     - numpy >=1.12
     - scipy
     - wrapt
@@ -31,12 +32,9 @@ test:
   requires:
     - python=3.10
     - coverage
-    - jinja2
     - pytest
     - pythonfmu <0.6.3  # [not osx]
     - watchdog
-    - xlrd
-    - xlsxwriter
   commands:
     - python -m cosapp.tests.all_tests
 
@@ -44,28 +42,26 @@ about:
   home: https://cosapp.readthedocs.io
   summary: CoSApp, the Collaborative System Approach.
   description: |
-    The primary goal of **CoSApp** is to help technical department in the design of complex systems.
-    To do so, the framework allows the simulation of various systems representing the different
-    parts of the final product in a common environment. The consequences are the ability for each
-    subsystem team to carry out design study with a direct feedback of the impact of parameters at
-    the product level.
+    The primary goal of **CoSApp** is to help technical departments in the design of complex systems.
+    To do so, the framework allows the simulation of various systems representing the different parts
+    of the final product in a common environment. The benefit is the ability for each subsystem team
+    to carry out design study with a direct feedback at product level.
 
-    The main features are :
+    The main features are:
 
     - Butterfly effect
 
-    Coupled your preferred simulation software with CoSApp to get immediate impact on main product
-    variables and iterates to converge on a better design.
+    Couple your simulation models with CoSApp to get immediate impact on main product variables
+    and iterate to converge on a better design.
 
     - Design guidance
 
     All systems can share design parameters associated with an acceptable range. You can take advantage
-    of those limited degrees of freedom without fear of breaking your neighbors' work.
+    of those limited degrees of freedom without fear of breaking your collaborators' work.
 
-    - Margins & Uncertainties
+    - Flexible simulation workflows
 
-    All design parameters have an intrinsic dispersion. Knowing the range of fluctuations is crucial to
-    ensure the robustness of the design. CoSApp handles natively uncertain variables.
+    CoSApp solvers can be combined into versatile, customized workflows that fit specific simulation intents.
   keywords: cosapp, system simulation, system design
   dev_url: https://gitlab.com/cosapp/cosapp
   license: Apache-2.0
