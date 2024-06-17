@@ -1,6 +1,6 @@
 {% set name = "cosapp" %}
-{% set version = "0.16.0" %}
-{% set pypi_version = "0.16.0" %}
+{% set version = "0.17.0" %}
+{% set pypi_version = "0.17.0" %}
 
 package:
   name: {{ name }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ pypi_version }}.tar.gz
-  sha256: 2f849efc92afc4872a73b5f9226daccaedd733e2f2a5bf473d6855a906f100de
+  sha256: 87ef42d2e2056c07f7cbccbf260e23a802538ceaa473a8521da1e3f325530ddb
 
 build:
   noarch: python
@@ -24,7 +24,7 @@ requirements:
     - pandas
     - jsonschema
     - jinja2
-    - numpy >=1.12
+    - numpy <2
     - scipy
     - wrapt
 
@@ -32,7 +32,7 @@ test:
   requires:
     - python >=3.9
     - coverage
-    - pytest <7.3
+    - pytest <8.1
     - pythonfmu <0.6.3  # [not osx]
     - watchdog
   commands:
