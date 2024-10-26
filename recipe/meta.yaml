@@ -1,6 +1,6 @@
 {% set name = "cosapp" %}
-{% set version = "0.17.0" %}
-{% set pypi_version = "0.17.0" %}
+{% set version = "0.18.0" %}
+{% set pypi_version = "0.18.0" %}
 
 package:
   name: {{ name }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ pypi_version }}.tar.gz
-  sha256: 87ef42d2e2056c07f7cbccbf260e23a802538ceaa473a8521da1e3f325530ddb
+  sha256: b42e2424676d7a9d4e004c47ce36332f6d21d5f3a874b0884a21ba09e5e71e37
 
 build:
   noarch: python
@@ -33,7 +33,7 @@ test:
     - python >=3.9
     - coverage
     - pytest <8.1
-    - pythonfmu <0.6.3  # [not osx]
+    - pythonfmu  # [not osx]
     - watchdog
   commands:
     - python -m cosapp.tests.all_tests
