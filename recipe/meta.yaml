@@ -7,21 +7,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ pypi_version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ pypi_version }}.tar.gz
   sha256: 03434bab723875b5dff19660f0314c8df7d95262fd8ae808ccb1e39315daef5b
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
     - setuptools
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - pandas
     - jsonschema
     - jinja2
@@ -31,7 +31,7 @@ requirements:
 
 test:
   requires:
-    - python >=3.9
+    - python {{ python_min }}
     - coverage
     - pytest <8.1
     - pythonfmu  # [not osx]
