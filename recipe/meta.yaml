@@ -25,7 +25,7 @@ requirements:
     - pandas
     - jsonschema
     - jinja2
-    - numpy>1.12
+    - numpy >1.12
     - scipy
 
 test:
