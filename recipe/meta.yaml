@@ -33,7 +33,7 @@ test:
     - python {{ python_min }}
     - coverage
     - pytest
-    - pythonfmu=0.6.5  # [not osx]
+    - pythonfmu 0.6.5  # [not osx]
     - watchdog
   commands:
     - python -m cosapp.tests.all_tests
