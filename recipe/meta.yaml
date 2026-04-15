@@ -34,6 +34,7 @@ test:
     - coverage
     - pytest
     - pythonfmu 0.6.5  # [not osx]
+    - pyfmi <2.20
     - watchdog
   commands:
     - python -m cosapp.tests.all_tests
