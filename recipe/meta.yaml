@@ -1,6 +1,6 @@
 {% set name = "cosapp" %}
-{% set version = "1.6.0" %}
-{% set pypi_version = "1.6.0" %}
+{% set version = "1.6.1" %}
+{% set pypi_version = "1.6.1" %}
 
 package:
   name: {{ name }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ pypi_version }}.tar.gz
-  sha256: fb612f33d24c5d3431b0c5216c4cad5f9728c14125054374f214680c1e0ebc4b
+  sha256: 18c5a5caa69053f1b878b29b34ddd572ea67d99d3e7cf7016103e19636397572
 
 build:
   noarch: python
